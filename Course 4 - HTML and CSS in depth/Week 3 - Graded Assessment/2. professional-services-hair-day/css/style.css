@@ -1,0 +1,191 @@
+body {
+  background-color: #ffe6e6;
+  font-family: "Markazi Text", serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header {
+  background-color: #323232;
+  height: 5rem;
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+  position: fixed;
+  opacity: 1;
+  z-index: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.navbar img {
+  float: left;
+  height: 100%;
+  width: auto;
+  padding-left: 2rem;
+}
+
+.navbar ul {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.navbar li a {
+  font-family: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar li a:link {
+  color: #d0604c;
+}
+
+.navbar li a:visited {
+  color: #d0604c;
+}
+
+.navbar li a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 8px #c7f2a4;
+}
+
+.navbar li a:active {
+  color: #d0604c;
+  background-color: #7f8487;
+}
+
+main {
+  padding-top: 6rem;
+  margin: 0 1.5rem;
+}
+
+section {
+  display: flex;
+}
+
+.section-1 {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1::before {
+  content: "";
+  background-image: url("../images/Artboard 22.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.section-1 article h1,
+.section-1 article p {
+  position: relative;
+  color: #000;
+  line-height: 0.9;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.section-1 article h1 {
+  margin-bottom: 0;
+  text-shadow: 5px 5px 8px #ffc2c2;
+}
+
+.section-1 article p {
+  font-size: 23px;
+  text-shadow: 2px 2px 8px #fff;
+}
+
+.section-2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-2 > article {
+  background-color: #d0604c;
+  border-radius: 20px;
+}
+
+article {
+  flex: 1;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+article {
+  flex: 1;
+  border-radius: 1em;
+  padding-bottom: 1.5rem;
+}
+
+article p + div {
+  display: flex;
+  flex: 1;
+  gap: 2rem 1rem;
+}
+
+article .cta {
+  color: #cdf0ea;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+article a:hover {
+  text-shadow: 2px 2px 8px #c7f2a4;
+  text-decoration: underline;
+}
+
+article a:active {
+  color: #cdf0ea;
+  background-color: #7f8487;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer div {
+  background-color: #323232;
+  padding: 0.5rem 0;
+}
+
+footer img {
+  width: 8rem;
+  height: auto;
+}
